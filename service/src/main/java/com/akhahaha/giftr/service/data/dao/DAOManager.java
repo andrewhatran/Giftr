@@ -10,6 +10,7 @@ public class DAOManager {
     private static final String BEAN_CONFIGURATION_FILE = "spring.xml";
 
     public enum Table {
+        USER
     }
 
     private final ClassPathXmlApplicationContext context;
@@ -24,6 +25,8 @@ public class DAOManager {
 
     public DAO getDAO(Table t) {
         switch (t) {
+            case USER:
+                return (DAO) context.getBean("userDAO");
             default:
                 return null;
         }
