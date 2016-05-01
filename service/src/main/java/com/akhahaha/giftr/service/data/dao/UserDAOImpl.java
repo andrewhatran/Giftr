@@ -96,13 +96,8 @@ public class UserDAOImpl implements UserDAO {
     }
 
     @Override
-    public User findUserByID(int userID) {
-        String sql = "SELECT A.*, B.name AS statusName, C.name AS genderName, D.name AS giftTypeName " +
-                "FROM User AS A " +
-                "INNER JOIN UserStatus AS B ON A.status = B.id " +
-                "INNER JOIN Gender AS C ON A.gender = C.id " +
-                "INNER JOIN GiftType AS D ON A.giftType = D.id " +
-                "WHERE A.id = ?";
+    public User findUserByID(Integer userID) {
+        String sql = "SELECT * FROM User WHERE id = ?";
 
         Connection connection = null;
         try {
@@ -114,12 +109,12 @@ public class UserDAOImpl implements UserDAO {
             if (rs.next()) {
                 user = new User(
                         rs.getInt("id"),
-                        new UserStatus(rs.getInt("status"), rs.getString("statusName")),
+                        findUserStatusByID(rs.getInt("status")),
                         rs.getDate("joinDate"),
                         rs.getDate("lastActive"),
-                        new Gender(rs.getInt("gender"), rs.getString("genderName")),
+                        findGenderByID(rs.getInt("gender")),
                         rs.getString("location"),
-                        new GiftType(rs.getInt("giftType"), rs.getString("giftTypeName")),
+                        findGiftTypeByID(rs.getInt("giftType")),
                         rs.getString("interests"));
             }
 
@@ -142,7 +137,7 @@ public class UserDAOImpl implements UserDAO {
     }
 
     @Override
-    public UserStatus findUserStatusByID(int userStatusID) {
+    public UserStatus findUserStatusByID(Integer userStatusID) {
         String sql = "SELECT * FROM UserStatus WHERE id = ?";
 
         Connection connection = null;
@@ -176,7 +171,7 @@ public class UserDAOImpl implements UserDAO {
     }
 
     @Override
-    public Gender findGenderByID(int genderID) {
+    public Gender findGenderByID(Integer genderID) {
         String sql = "SELECT * FROM Gender WHERE id = ?";
 
         Connection connection = null;
@@ -210,7 +205,7 @@ public class UserDAOImpl implements UserDAO {
     }
 
     @Override
-    public GiftType findGiftTypeByID(int giftTypeID) {
+    public GiftType findGiftTypeByID(Integer giftTypeID) {
         String sql = "SELECT * FROM GiftType WHERE id = ?";
 
         Connection connection = null;

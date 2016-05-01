@@ -6,7 +6,7 @@ import com.akhahaha.giftr.service.data.models.User;
 import com.akhahaha.giftr.service.data.models.UserStatus;
 
 /**
- * User DAO interface
+ * User DAOType interface
  * Created by Alan on 4/29/2016.
  */
 public interface UserDAO extends DAO {
@@ -19,11 +19,11 @@ public interface UserDAO extends DAO {
 
     void updateUser(User user);
 
-    User findUserByID(int userID);
+    User findUserByID(Integer userID);
 
-    UserStatus findUserStatusByID(int userStatusID);
+    UserStatus findUserStatusByID(Integer userStatusID);
 
-    Gender findGenderByID(int genderID);
+    Gender findGenderByID(Integer genderID);
 
-    GiftType findGiftTypeByID(int giftTypeID);
+    GiftType findGiftTypeByID(Integer giftTypeID);
 }

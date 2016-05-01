@@ -9,7 +9,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class DAOManager {
     private static final String BEAN_CONFIGURATION_FILE = "spring.xml";
 
-    public enum Table {
+    public enum DAOType {
         USER
     }
 
@@ -23,7 +23,7 @@ public class DAOManager {
         return DAOManagerSingleton.INSTANCE;
     }
 
-    public DAO getDAO(Table t) {
+    public DAO getDAO(DAOType t) {
         switch (t) {
             case USER:
                 return (DAO) context.getBean("userDAO");
