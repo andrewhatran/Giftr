@@ -1,0 +1,635 @@
+@import url(http://fonts.googleapis.com/css?family=Exo:100,200,400);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+
+@font-face {
+    font-family: Roboto;
+    src: url(../assets/RobotoSlab-Regular.ttf);
+}
+
+@font-face {
+    font-family: RobotoBold;
+    src: url(../assets/RobotoSlab-Bold.ttf);
+}
+
+@font-face {
+    font-family: Proxima;
+    src: url(../assets/ProximaNova-Light.otf);
+}
+
+@font-face {
+    font-family: ProximaBold;
+    src: url(../assets/ProximaNova-Extrabold.otf);
+}
+
+body {
+  background: #F1F3FA;
+}
+
+hr{
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #df5e3e;
+    width: 70px;
+    margin: 0 auto; 
+}
+
+.likes{
+	margin-top: 85px;
+}
+
+.well {
+	background: #fff;
+	border-radius: 20px;
+	border: 1.5px solid #e28168;
+
+}
+
+.well hr{
+	border-color: #df5e3e;
+	padding-bottom: 20px;
+}
+
+
+
+
+
+.container.text-center{
+	margin-top: 10px;
+}
+
+
+.list-group{
+	
+	padding-left: 20px;
+	text-align: left;
+	color: #61717e;
+	margin-top: 100px;
+	line-height:20px;
+}
+
+.list-group b{
+	color: #df5e3e;
+	font-family: RobotoBold;
+	font-size: 10pt;
+	padding-right: 10px;
+}
+
+
+/* Profile container */
+.profile {
+	  margin-left: 50px !important;
+
+}
+
+/* Profile sidebar */
+.profile-sidebar {
+	margin-top: 20px;
+  padding: 0px 0 0px 0;
+  background: #fff;
+    border-right: 1px solid #df5e3e !important;
+
+}
+
+.profile-userpic img {
+  float: none;
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  border-radius: 50% !important;
+}
+
+.profile-usertitle {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile-usertitle-name {
+  color: #df5e3e;
+  font-size: 20px;
+  font-weight: 600;
+    color: #61717e;
+  line-height:0px !important;
+}
+
+.profile-usertitle-job {
+  text-transform: uppercase;
+  color: #5b9bd1;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.profile-userbuttons {
+  text-align: center;
+  margin-top: 10px;
+    padding-bottom: 20px;
+
+}
+
+.profile-userbuttons .btn1 {
+	color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: 5px;
+  background-color: #e29180;
+  letter-spacing: 2px;
+  height: 140px;
+  width: 110px;
+   border-width: 0px;
+  font-family: Proxima;
+  border-radius: 20px;
+  padding-top: 60px;
+	background-image: url('../assets/frugal.svg');
+	background-size: 50px 50px;
+	background-repeat: no-repeat;
+	background-position: 50% 20%;
+}
+
+.profile-userbuttons .btn2 {
+	color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: 5px;
+  background-color: #e1795a;
+  letter-spacing: 2px;
+  height: 140px;
+  width: 110px;
+  border-width: 0px;
+  font-family: Proxima;
+  border-radius: 20px;
+  padding-top: 60px;
+	background-image: url('../assets/thrifty.svg');
+	background-size: 50px 50px;
+	background-repeat: no-repeat;
+	background-position: 50% 20%;
+}
+
+.profile-userbuttons .btn3 {
+	  border-width: 0px;
+	color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: 5px;
+  background-color: #df5e3e;
+  letter-spacing: 2px;
+  height: 140px;
+  width: 110px;
+  font-family: Proxima;
+  border-radius: 20px;
+  padding-top: 60px;
+	background-image: url('../assets/splurge.svg');
+	background-size: 50px 50px;
+	background-repeat: no-repeat;
+	background-position: 50% 20%;
+}
+
+.profile-userbuttons .btn1 h1 {
+  font-size: 14px;
+  font-family: RobotoBold;
+  color: #fff;
+  margin-top: 0px;
+}
+
+
+.profile-userbuttons .btn2 h1 {
+  font-size: 14px;
+  font-family: RobotoBold;
+  color: #fff;
+  margin-top: 0px;
+}
+
+.profile-userbuttons .btn3 h1 {
+  font-size: 14px;
+  font-family: RobotoBold;
+  color: #fff;
+  margin-top: 0px;
+}
+.profile-userbuttons .btn1:hover {
+  text-align: center;
+   background-color: #fff;
+   	color: #df5e3e;
+	border: 1.5px solid #df5e3e;
+	background-image: url('../assets/frugalred.svg');
+	background-size: 50px 50px;
+	background-repeat: no-repeat;
+	background-position: 50% 20%;
+}
+.profile-userbuttons .btn2:hover {
+  text-align: center;
+   background-color: #fff;
+   	color: #df5e3e;
+	border: 1.5px solid #df5e3e;
+	background-image: url('../assets/thriftyred.svg');
+	background-size: 50px 50px;
+	background-repeat: no-repeat;
+	background-position: 50% 20%;
+}
+.profile-userbuttons .btn3:hover {
+  text-align: center;
+   background-color: #fff;
+   	color: #df5e3e;
+	border: 1.5px solid #df5e3e;
+	background-image: url('../assets/splurgered.svg');
+	background-size: 50px 50px;
+	background-repeat: no-repeat;
+	background-position: 50% 20%;
+}
+
+
+.profile-userbuttons .btn1:hover h1{
+ color: #df5e3e;
+}
+.profile-userbuttons .btn2:hover h1{
+ color: #df5e3e;
+}
+.profile-userbuttons .btn3:hover h1{
+ color: #df5e3e;
+}
+
+button:focus {outline:0;}
+
+
+.profile-userbuttons .btn1:last-child {
+  margin-right: 0px;
+}
+.profile-userbuttons .btn2:last-child {
+  margin-right: 0px;
+}
+.profile-userbuttons .btn3:last-child {
+  margin-right: 0px;
+}
+    
+.profile-usermenu {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  text-align: left;
+  margin-left: 15%;
+  width: 75%
+
+
+}
+
+.profile-usermenu ul li {
+  border-bottom: 1px solid #f0f4f7;
+}
+
+.profile-usermenu ul li:last-child {
+  border-bottom: none;
+}
+
+.profile-usermenu ul li a {
+  color: #61717e;
+  font-size: 14px;
+  font-weight: 400;
+
+}
+
+.profile-usermenu ul li a i {
+  margin-right: 8px;
+   line-height: - 20 px !important;
+  font-size: 18px;
+  background-image: url('../assets/signup.svg');
+
+}
+
+
+.profile-usermenu ul li a:hover {
+	color: #df5e3e;
+	background-color: #fff;
+  	border-left: 4px solid #df5e3e !important;
+
+
+}
+
+
+
+.profile-usermenu ul li:active {
+  background-color: #df5e3e !important;
+  border-bottom: none;
+
+}
+
+.profile-usermenu ul li:active a {
+  color: #fff;
+   background-color: #df5e3e !important;
+}
+
+/* Profile Content */
+.profile-content {
+  padding: 20px;
+  background: #fff;
+  min-height: 460px;
+}
+
+
+a{
+	height: 25pt;
+	margin-bottom: 5px;
+}
+h1{
+	color: #df5e3e;
+  font-size: 30px;
+  font-weight: 600;
+  line-height:20px !important;
+}
+
+h2{
+	color: #61717e;;
+  font-size: 36px;
+  font-weight: 600;
+  line-height:1px !important;
+
+}
+
+h3{
+	letter-spacing: 2px;
+	color: #df5e3e;
+}
+
+h4{
+	font-family: RobotoBold;
+	text-align: center;
+	color: #df5e3e;
+	font-size: 26px;
+}
+
+h5{
+	font-family: RobotoBold;
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	background: #fff;
+
+	color: #fff;
+	font-family: Roboto;
+	font-size: 12px;
+}
+
+.body{
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	right: -40px;
+	bottom: -40px;
+	width: auto;
+	height: auto;
+
+	background-color: #fff;
+	background-size: cover;
+	-webkit-filter: blur(5px);
+	z-index: 0;
+}
+
+.grad{
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	right: -40px;
+	bottom: -40px;
+	width: auto;
+	height: auto;
+	z-index: 1;
+	opacity: 0.7;
+}
+
+.profilePic{
+	position: absolute;
+	top: calc(25% - -35px);
+	left: calc(50% - 255px);
+	z-index: 2;
+
+}
+.header{
+	position: absolute;
+	top: calc(10% - -35px);
+	left: calc(50% - 255px);
+	z-index: 2;
+
+}
+.header{
+	position: absolute;
+	top: calc(10% - -35px);
+	left: calc(50% - 255px);
+	z-index: 2;
+
+}
+
+.header div{
+	float: left;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 35px;
+	font-weight: 200;
+}
+
+.header div span{
+	color: #5379fa !important;
+}
+
+.user_info{
+	position: absolute;
+	top: calc(40% - 75px);
+	left: calc(50% - 50px);
+	height: 150px;
+	width: 450px;
+	padding: 10px;
+	z-index: 2;
+	font-size: 20px;
+	color:  #fff !important;
+}
+
+
+.login{
+	position: absolute;
+	top: calc(40% - 75px);
+	left: calc(50% - 50px);
+	height: 150px;
+	width: 350px;
+	padding: 10px;
+	z-index: 2;
+}
+
+.login input[type=text]{
+	width: 200px;
+	height: 30px;
+	background: transparent;
+	border: 1px solid #df5e3e;
+	border-radius: 2px;
+	color: #df5e3e;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	padding: 4px;
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+.login input[type=password]{
+	width: 200px;
+	height: 30px;
+	background: transparent;
+	border: 1px solid #7e8890;
+	border-radius: 2px;
+	color: #7e8890;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	padding: 4px;
+	margin-top: 10px;
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+.button{
+	width: 200px;
+	height: 35px;
+	background: #df5e3e;
+	border: 1px solid #df5e3e;
+	cursor: pointer;
+	border-radius: 8px;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 6px;
+	margin-top: 10px;
+	letter-spacing: 2px;
+}
+
+.button-stuff{
+	cursor: pointer;
+	border-radius: 8px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	padding: 6px;
+	letter-spacing: 2px;
+	border: 0px !important;
+	color: #fff;
+	background: #e28168;
+	width: 160px !important;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	font-size: 10pt;
+	height: 35px;
+}
+
+.button-add{
+	width: 100px;
+	height: 35px;
+	background: #e28168;
+	cursor: pointer;
+	border-radius: 8px;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 10px;
+	font-weight: 400;
+	padding: 6px;
+	margin-top: 10px;
+	letter-spacing: 2px;
+}
+
+.button-price{
+	width: 100px;
+	height: 35px;
+	background: #e28168;
+	cursor: pointer;
+	border-radius: 8px;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 10px;
+	font-weight: 400;
+	padding: 6px;
+	margin-top: 10px;
+	letter-spacing: 2px;
+}
+
+.button-stuff:hover{
+	border: 0px !important;
+	color: #fff;
+	background: #df5e3e;
+	width: 180px !important;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	font-size: 10pt;
+	height: 35px;
+	background-image: url('../assets/cross.svg');
+	background-size: 10px 10px;
+	background-repeat: no-repeat;
+	background-position: 7% 45%;}
+
+.button-add:hover{
+	border: 0px !important;
+	color: #fff;
+	background: #df5e3e;
+	width: 120px !important;
+	font-size: 10pt;
+	height: 35px;
+}
+
+
+
+.login input[type=button]:hover{
+	opacity: 0.8;
+}
+
+.login input[type=button]:active{
+	opacity: 0.6;
+}
+
+.login input[type=button2]:hover{
+	opacity: 0.8;
+}
+
+.login input[type=button2]:active{
+	opacity: 0.6;
+}
+
+
+.login input[type=text]:focus{
+	outline: none;
+	border: 1px solid #e2866c;
+}
+
+.login input[type=password]:focus{
+	outline: none;
+	border: 1px solid #9c9da7;
+}
+
+.login input[type=button]:focus{
+	outline: none;
+}
+
+.login input[type=button2]:focus{
+	outline: none;
+}
+
+#register{
+	background: #fff ;
+	border: 1px solid #fff;
+	color: #df5e3e;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	padding-top: 10px !important;
+	margin-top: 1px;
+	background-image: url('../assets/signup.svg');
+	background-repeat: no-repeat;
+	background-position: 15% 100%;
+	display: block;  /* may not need this, but I've found I do */
+	}
+
+::-webkit-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+
+::-moz-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}

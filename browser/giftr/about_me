@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Giftr</title>
+     <link rel="stylesheet" href="css/style.css" />
+
+
+
+     <script src="js/prefixfree.min.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+
+	<script>
+		$(document).ready(function(){
+		    $("#btn1").click(function(){
+		        $("#test1").text("Hello world!");
+		    });
+
+		});
+	</script>
+
+    
+  </head>
+
+  <body>
+  	
+
+    <div class="body"></div>
+
+		
+
+		<div class="header">
+			<div>
+			<img class="phoneSlides" src="assets/phone1.png">
+				<img class="phoneSlides" src="assets/phone6.png">
+				<img class="phoneSlides" src="assets/phone3.png">
+				<img class="phoneSlides" src="assets/phone4.png">
+				<img class="phoneSlides" src="assets/phone5.png">
+				<img class="phoneSlides" src="assets/phone2.png">
+				<img class="phoneSlides" src="assets/phone7.png">
+			 </div> 
+		</div>
+
+		<div class="container">
+		    <div class="row profile">
+				<div class="col-md-3">
+					<div class="profile-sidebar">
+						<br><br>
+						<!-- SIDEBAR USERPIC -->
+						<div class="profile-userpic">
+							<img src="assets/boxlogo.svg" class="img-responsive" alt="">
+						</div>
+						<!-- END SIDEBAR USERPIC -->
+						<!-- SIDEBAR USER TITLE -->
+						<div class="profile-usertitle">
+							<div class="profile-usertitle-name">
+								Welcome Back  <h1>Nathan Sun</h1>
+							</div>
+						</div>
+						<br>
+						<hr>
+						<!-- END SIDEBAR USER TITLE -->
+						<!-- SIDEBAR BUTTONS -->
+						<!--<div class="profile-userbuttons">
+							<button type="button" class="btn btn-success btn-sm">Follow</button>
+							<button type="button" class="btn btn-danger btn-sm">Message</button>
+						</div>-->
+						<!-- END SIDEBAR BUTTONS -->
+						<!-- SIDEBAR MENU -->
+						<div class="profile-usermenu">
+							<ul class="nav">
+								<li>
+									<a href="about_me.html">
+									<img src="assets/user_icon.svg" alt="">
+									About Me </a>
+								</li>
+								<li>
+									<a href="#">
+									<img src="assets/gift_icon.svg" alt="">
+									My Gifts </a>
+								</li>
+								<li>
+									<a href="#" >
+									<img src="assets/settings_icon.svg" alt="">
+									Settings </a>
+								</li>
+								<li id = "sign_out">
+									<a href="#">
+									<img src="assets/out_icon.svg" alt="">
+									Sign Out </a>
+								</li>
+							</ul>
+						</div>
+						<!-- END MENU -->
+					</div>
+				</div>
+				<div class="col-md-9">
+		            <div class="profile-content">
+					   Some user related content goes here...
+		            </div>
+				</div>
+			</div>
+		</div>
+
+		<br>
+		<br>
+		<br>
+		
+		<div class="login">
+			<img src="assets/giftrlogo.svg" width="200" height="auto"/>
+			<br>
+
+			<form class="form" method="post" action="action.php">
+				<a href="profile.html"> <input class="button"type="button" id="login" value="Find Match"> </a>
+				<input class="button" type="button"  value="Browse Gifts"> 
+			</form>
+
+
+				</form>
+		</div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    
+    
+    <script>
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+		    var i;
+		    var x = document.getElementsByClassName("phoneSlides");
+		    for (i = 0; i < x.length; i++) {
+		       x[i].style.display = "none";  
+		    }
+		    myIndex++;
+		    if (myIndex > x.length) {myIndex = 1}    
+		    x[myIndex-1].style.display = "block";  
+		    setTimeout(carousel, 1000); // Change image every 2 seconds
+		}
+	</script>
+    
+  </body>
+</html>
