@@ -58,7 +58,7 @@ public class CatalogClientImpl implements CatalogClient {
         try {
             HttpResponse<ProductResponse> productHttpResponse = Unirest.get(BASE_URL + "{endpoint}")
                     .routeParam("endpoint", "product")
-                    .queryString("publisherId", publisherID).queryString("apiKey", apiKey)
+                    .queryString("apiKey", apiKey).queryString("publisherId", publisherID)
                     .queryString("format", "json")
                     .queryString("keyword", keyword)
                     .asObject(ProductResponse.class);
