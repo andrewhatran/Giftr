@@ -33,6 +33,107 @@ hr{
     margin: 0 auto; 
 }
 
+.list-group-item {
+    display:inherit;
+}
+
+.list-group-item span{
+    margin-top: 12px;
+    font-size: 15px;
+}
+
+.panel-heading.success{
+	background: #df5e3e !important;
+}
+
+.panel-heading.shipping{
+	background: #61717e !important;
+	
+}
+
+.panel-heading.processing{
+	background: #c2c4bd !important;
+}
+
+.panel-heading span{
+	color: #FFFFFF!important;
+}
+
+.panel-body{
+	text-align: left!important;
+}
+
+.panel-body img{
+	/*padding-right: 0px;*/
+	padding-left: 10px
+}
+
+.panel-body span{
+	color: #000000!important;
+	padding-left: 20px;
+}
+
+.panel-body h4{
+	/*color: #000000!important;*/
+	text-align: left !important;
+	padding-left: 20px !important;
+}
+
+.panel-footer span{
+	color: #df5e3e;
+}
+
+
+.dropdown{
+	width: 180px; height: 50px;
+	margin: 0 auto;
+	background-image: url('../assets/plus2.svg');
+	background-size: 40px 40px;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.dropdown-description{
+	display:none;
+	position: absolute;
+	z-index: 1;
+}
+
+.dropdown:hover .dropdown-description{
+	display: block;
+}
+
+.list-group-item {
+    display:inherit;
+}
+
+.list-group-item span{
+    margin-top: 12px;
+    font-size: 12px;
+}
+   
+
+.caption p{
+	color: #61717e;
+}
+
+.caption b{
+	color: #df5e3e;
+}
+
+.caption h5 a{
+    color: #61717e;
+    font-size: 14pt !important;
+}
+
+.pull-right h5 {
+    color: #df5e3e !important;
+}
+
+
+
+
+
 .likes{
 	margin-top: 85px;
 }
@@ -41,17 +142,12 @@ hr{
 	background: #fff;
 	border-radius: 20px;
 	border: 1.5px solid #e28168;
-
 }
 
 .well hr{
 	border-color: #df5e3e;
 	padding-bottom: 20px;
 }
-
-
-
-
 
 .container.text-center{
 	margin-top: 10px;
@@ -299,11 +395,7 @@ button:focus {outline:0;}
 	color: #df5e3e;
 	background-color: #fff;
   	border-left: 4px solid #df5e3e !important;
-
-
 }
-
-
 
 .profile-usermenu ul li:active {
   background-color: #df5e3e !important;
@@ -358,7 +450,7 @@ h4{
 h5{
 	font-family: RobotoBold;
 	text-align: center;
-	color: #fff;
+	color: #df5e3e;
 	font-size: 20px;
 }
 

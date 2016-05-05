@@ -1,0 +1,21 @@
+{
+    "id": 1,
+    "username": "andrewhatran",
+    "status": {
+      "id": 1,
+      "name": "Active"
+    },
+    "lastActive": "2016-05-05",
+    "gender": {
+      "id": 1,
+      "name": "Unknown"
+    },
+    "location": "Los Angeles",
+    "giftType": {
+      "id": 1,
+      "name": "Unknown"
+    },
+    "interests": "bananas",
+    "priceMin": 0,
+    "priceMax": 0
+}
